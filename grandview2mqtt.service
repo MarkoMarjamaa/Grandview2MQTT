@@ -1,0 +1,12 @@
+[Unit]
+Description=Grandview2MQTT
+
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/pi/grandview2mqtt/grandview2mqtt.py
+User=pi
+
+[Install]
+WantedBy=multi-user.target
