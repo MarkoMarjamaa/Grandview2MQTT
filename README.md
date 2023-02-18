@@ -3,6 +3,11 @@ Control Grandview motorized screen with serial and control it as cover in Home A
 
 Create /home/pi/grandview2mqtt dir and place files there. 
 
+Might have to install Paho. 
+```
+pip3 install paho-mqtt
+```
+
 Update grandview2mqtt.py with your environment
 ```
 # Address of your MQTT broker server
