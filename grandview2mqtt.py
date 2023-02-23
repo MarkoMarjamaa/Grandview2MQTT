@@ -64,7 +64,7 @@ config_data = {
         }
     }
 print (json.dumps(config_data))
-client.publish(discovery_topic+"/cover/"+object_id+"/config",json.dumps(config_data))
+client.publish(discovery_topic+"/cover/"+object_id+"/config",json.dumps(config_data), retain=True)
 
 #print("Publishing message to topic",my_topic+"/cover/"+object_id+"/set")
 #client.publish(my_topic+"/cover/"+object_id+"/set","OPEN")
